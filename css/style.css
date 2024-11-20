@@ -121,9 +121,9 @@ h1{
 
 .content{
     max-width: 1000px;
-    margin: auto; 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: auto;
+    padding:20px;
+    font-size:20px
 }
 
 .example{
@@ -167,7 +167,7 @@ h1{
 
 .sectionTitle{
 	position:sticky;
-	top:44px;
+	top:56px;
 	text-align:center;
 	background-color:#181a1b;
     z-index: 1;
@@ -197,20 +197,20 @@ h1{
 }
 
 #navbar a {
+    font-size: 24px;
     color: #e8e6e3;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
     background-color: #404040;
     border:none;
-    border-radius: 12px;
-    padding: 0px 10px;
-    
+    border-radius: 24px;
+    padding: 0px 12px;    
 }
 
 #navbar a:hover {
     /* background-color: #640064; */
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s ease;
 }
 
