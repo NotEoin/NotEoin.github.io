@@ -31,11 +31,16 @@
     }
 }
 
-h1, h2 {
+h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-shadow: rgb(245, 245, 245) 0px 0px 4px;
+}
 
 body{
     text-align: center;
@@ -120,6 +125,7 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .example{
     background-color:#242729;
     padding: 8px 20px 20px;
@@ -128,6 +134,8 @@ h1{
     max-width: 1000px;
     margin-top: 20px;
     margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .example > h3{
@@ -229,7 +237,7 @@ html {
 }
 
 #back-to-top:hover i {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: 0.3s ease;
 }
 
@@ -251,4 +259,35 @@ html {
 .showcase{
     width:300px;
     margin-top:10px;
+}
+
+/* Slide-down animation */
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Utility class for slide-down */
+.slide-down {
+    animation: slide-down 1.5s ease-out;
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Utility class for fade-in */
+.fade-in {
+    animation: fade-in 1.5s ease-in-out;
+    opacity:1;
 }
