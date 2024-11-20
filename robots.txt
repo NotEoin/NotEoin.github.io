@@ -1,0 +1,3 @@
+#dont even think about it buddy boy
+User-agent: *
+Disallow: /

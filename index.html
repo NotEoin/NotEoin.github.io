@@ -6,10 +6,12 @@
 		<meta name = "author" content = "Eoin Forrest">
 		<meta name = "description" content = "About me">
 		<title> Eoin Forrest </title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/fb25d4f967.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	</head>
     <body>
+        
         <header>
             <h1> Eoin Forrest </h1>
             <img id="headshot" src="images/headshot.jpg" alt="A headshot of me, Eoin" style="width: 200px; height: 200px;">
@@ -44,6 +46,12 @@
                 <p class="content">  Hey! My name is Eoin. Im a second year computer science student at Newcastle University. I love programming and made this website as a portfolio of my projects </p>
             </section>
             <hr>
+            <nav id="navbar">
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+            </nav>
+            
                 <section id="projects">
                     <div class="sectionTitle">
                         <h2> Projects </h2>
@@ -95,26 +103,32 @@
                         <h3> Bartender, The Old George Inn </h3>
                         <p>November 2024 - Present</p>
                         <div class="examplebody">
-                            <li>Deliver excellent customer service in a fast-paced environment, serving 400+ customers a shift during peak periods.</li>
-                            <li>Collaborate with a team of 5 to ensure smooth service during peak hours.</li>
+                            <div class = "centredList">
+                                <li>Deliver excellent customer service in a fast-paced environment, serving 400+ customers a shift during peak periods.</li>
+                                <li>Collaborate with a team of 5 to ensure smooth service during peak hours.</li>
+                            </div>
                         </div>
                     </div>
                     <div class="example">
                         <h3> Bartender, Bar Malden </h3>
                         <p>May 2024 - September 2024</p>
                         <div class="examplebody">
-                           <li>Managed bar operations, preparing and serving a wide variety of beers and cocktails.</li>
-                           <li>Aided in office operations, including cashing up at the end of shifts, weekly banking, conducting inventory checks and assisting in audits.</li>
-                           <li>Troubleshooted issues in the cellar, fixing issues with beer dispensing systems and coordinating with external contractors for repairs where needed.</li>
+                            <div class = "centredList">
+                                <li>Managed bar operations, preparing and serving a wide variety of beers and cocktails.</li>
+                                <li>Aided in office operations, including cashing up at the end of shifts, weekly banking, conducting inventory checks and assisting in audits.</li>
+                                <li>Troubleshooted issues in the cellar, fixing issues with beer dispensing systems and coordinating with external contractors for repairs where needed.</li>
+                            </div>
                         </div>
                     </div>
                     <div class="example">
                         <h3> Team Member, Lane7 Newcastle </h3>
                         <p>November 2023 - May 2024</p>
                         <div class="examplebody">
-                            <li>Greeted customers, took orders, and delivered food and beverages.</li>
-                            <li>Collaborated with colleagues to ensure smooth operation and exceptional service delivery.</li>
-                            <li>Engaged with customers to ensure their needs were met and to address any concerns or questions.</li>
+                            <div class = "centredList">
+                                <li>Greeted customers, took orders, and delivered food and beverages.</li>
+                                <li>Collaborated with colleagues to ensure smooth operation and exceptional service delivery.</li>
+                                <li>Engaged with customers to ensure their needs were met and to address any concerns or questions.</li>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -159,9 +173,13 @@
                     </div>
                 </section>
                 <hr>
+                
+
             
         </main>
         <footer>
+            <button id="back-to-top" title="Go back to top"><i class="fa-solid fa-arrow-up"></i></button>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
